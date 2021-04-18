@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    background-image: linear-gradient(to right bottom, #14e353, #00e172, #00df8c, #00dca1, #26d8b1);
+}
+
+.monitor {
+    grid-column: 4/8;
+    grid-row: 4/8;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./assets/img/pc.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-search {
+    width: 100%;
+    height: auto;
+    margin-block-start: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-search .button-search {
+    width: 60px;
+    height: 30px;
+    margin-right: 1px;
+    background-image: url('./assets/img/life-bar.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-search .input-search {
+    width: 250px;
+    height: 25px;
+    align-self: center;
+    border-radius: 20px;
+    border: #000000 solid 2px;
+    background: #77767c;
+}
+
+.gamepad-pc {
+    grid-column: 3/5;
+    grid-row: 8/10;
+    background-image: url('./assets/img/mouse.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.gamepad-xbox {
+    grid-column: 7/9;
+    grid-row: 8/10;
+    background-image: url('./assets/img/xbox.svg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.gamepad-playstation{
+    grid-column: 8/10;
+    grid-row: 5/7;
+    background-image: url('./assets/img/controller.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gamepad-switch {
+    grid-column: 2/4;
+    grid-row: 5/7;
+    background-image: url('./assets/img/nintendo-switch.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
